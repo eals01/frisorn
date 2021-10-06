@@ -1,0 +1,82 @@
+#galleri {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    width: 100%;
+    max-width: 1000px;
+    height: 500px;
+
+    background: rgb(20,20,20);
+    box-shadow: 0px 4px 10px -5px rgba(0,0,0,0.13);
+
+    overflow: hidden;
+}
+
+#galleri_bilde {
+    width: auto;
+    height: auto;
+    max-height: 500px;
+}
+
+.galleri_knapp {
+    position: absolute;
+
+    height: 70px;
+    width: 50px;
+
+    background: rgba(255,255,255,0.1);
+
+    color: rgba(0,0,0,0.4);
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 70px;
+    text-align: center;
+
+    cursor: pointer;
+    user-select: none;
+
+    transition: .2s;
+}
+
+.galleri_knapp:hover {
+    background: rgba(255,255,255,0.2);
+    color: black;
+}
+
+#knapp_venstre {
+    left: 0;
+}
+
+#knapp_hoyre {
+    right: 0;
+}
+
+#bilde_rulett {
+    display: flex;
+    padding: 6px 0 0 0;
+}
+
+#bilde_rulett > img {
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgb(100,100,100,0.3);
+
+    cursor: pointer;
+
+    box-shadow: 0px 4px 10px -5px rgba(0,0,0,0.13);
+}
+
+#bilde_linje {
+    position: absolute;
+    top: 653px;
+
+    margin: 5px 0 0 0;
+    height: 2px;
+    width: 42px;
+    background: rgb(192, 0, 0);
+    
+    transition: left .2s, width .2s;
+}

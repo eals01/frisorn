@@ -1,0 +1,181 @@
+#banner {
+    margin: 65px 0 0 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    background-size: cover;
+}
+
+#banner_img {
+    height: calc(100vw * 0.7);
+    max-height: 512px;
+    width: auto;
+
+    overflow: hidden;
+    object-fit: cover;
+    object-position: right;
+}
+
+#banner_overlay {
+    position: absolute;
+
+    height: calc(100vw * 0.7);
+    max-height: 512px;
+    width: 100%;
+
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.5298494397759104) 0%, rgba(0,0,0,0) 100%);
+}
+
+#cta {
+    position: absolute;
+
+    width: 100%;
+    max-width: 1100px;
+}
+
+#cta > div {
+    position: relative;
+    padding: 0 50px 0 50px;
+}
+
+#banner h2 {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    color: white;
+}
+
+#banner p {
+    max-width: 400px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin-right: 0;
+    color: white;
+}
+
+#banner a {
+    text-decoration: none;
+}
+
+#bestill_knapp {
+    width: 120px;
+    height: 50px;
+    background: rgb(192, 0, 0);
+
+    line-height: 50px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+
+    box-shadow: 0px 4px 10px -2px rgba(0,0,0,0.3);
+}
+
+#bestill_knapp:hover {
+    transform: scale(1.03);
+    transition: .1s;
+}
+
+#tekst, #tekst2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+#tekst {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    max-width: 1100px;
+    width: 100%;
+
+    margin: 0 auto 0 auto;
+    padding: 50px 0 0 0;
+}
+
+#tekst div {
+    max-width: 49%;
+    padding: 0 50px 0 15px;
+}
+
+#tekst img {
+    max-width: 49%;
+    max-height: 350px;
+    padding: 0 15px 0 50px;
+}
+
+#tekst p {
+    margin: 0;
+}
+
+#tekst ul {
+    padding-left: 16px;
+}
+
+#tekst2 {
+    padding-top: 50px;
+}
+
+#tekst2 div {
+    padding-top: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 50px 0 50px;
+}
+
+#tekst2 img {
+    height: 100px;
+}
+
+#tekst2 p {
+    text-align: center;
+}
+
+@media only screen and (max-width: 950px) {
+    #tekst {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #tekst img {
+        max-width: 60%;
+        padding: 0 0 50px 0;
+    }
+
+    #tekst div {
+        padding: 0 50px 0 50px;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    #banner p {
+        max-width: 250px;
+        margin: 9px 0 9px 0;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #banner p {
+        max-width: 150px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    #cta{
+        zoom: 0.7;
+    }
+}

@@ -1,0 +1,54 @@
+#artikkel {
+    max-width: 1000px;
+}
+
+#artikkel p {
+    display: block;
+    margin-top: 0;
+
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+#artikkel h2 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+#artikkel > div > div {
+    display: flex;
+    flex-direction: row;
+}
+
+#artikkel > div > div > div {
+    column-count: 2;
+}
+
+#artikkel img {
+    height: auto;
+    width: 49%;
+    padding: 20px 0 20px 0;
+}
+
+#artikkel img:first-child {
+    padding-right: 10px;
+}
+
+#artikkel img:last-child {
+    padding-left: 10px;
+}
+
+#artikkel_bilder {
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 650px) {
+    #artikkel > div > div > div {
+        column-count: 1;
+    }
+}

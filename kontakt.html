@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Frisør'n</title>
+        <link rel='icon' type='image/svg' href='ressurser/favicon.svg'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+        <link rel='stylesheet' href='style/style.css'>
+        <link rel='stylesheet' href='style/bunntekst.css'>
+        <link rel='stylesheet' href='style/nav.css'>
+        <style>
+            @media only screen and (max-width: 800px) {
+                #content {
+                    margin-top: 65px;
+                }
+            }
+        </style>
+        <script src='https://polyfill.io/v3/polyfill.min.js?features=default' async></script>
+    </head>
+    <body>
+        <div id='nav_root' aktiv='index'>
+        <script src='script/nav_html.js' aktiv='1'></script>
+        <div id='wrap'>
+            <div id ='innhold'>
+                <div id='info'>
+                    <div>
+                        <table>
+                            <tr>
+                                <td colspan='2'><b>Åpningstider</b></td>
+                            </tr>
+                            <tr>
+                                <td>Mandag</td>
+                                <td>09 - 17</td>
+                            </tr>
+                            <tr>
+                                <td>Tirsdag</td>
+                                <td>09 - 17</td>
+                            </tr>
+                            <tr>
+                                <td>Onsdag</td>
+                                <td>09 - 17</td>
+                            </tr>
+                            <tr>
+                                <td>Torsdag</td>
+                                <td>09 - 17</td>
+                            </tr>
+                            <tr>
+                                <td>Fredag</td>
+                                <td>09 - 17</td>
+                            </tr>
+                            <tr>
+                                <td>Lørdag</td>
+                                <td>10 - 14</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <img src='ressurser/telefon.svg'> 918 32 002
+                            </li>
+                            <li>
+                                <img src='ressurser/mail.svg'> dybdahlsvei@xn--frisrn-enya.no
+                            </li>
+                            <li>
+                                <img src='ressurser/adresse.svg'> Dybdahls veg 3-5, 7051 Trondheim
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id='kart'></div>
+            </div>
+            <div id='bunntekst'>
+                <span>Copyright © 2020 by Frisør´n AS, Dybdahls veg 3-5, 7051 Trondheim</span>
+                <span>Tlf. 918 32 002</span>
+                <span><a href='#'>E-post: Frisør'n</a></span>
+                <span>Org.nr.: 997 490 681</span>
+                <span>Designet av studenter ved NTNU ❤️</span>
+            </div>
+        </div>
+        <script
+            src='https://maps.googleapis.com/maps/api/js?key=AIzaSyC6Hrv-4sg7FXxjOMh3zAUc1xXGe78SGUg&callback=initMap&libraries=&v=weekly&channel=2'
+            async
+        ></script>
+        <script src='script/kart.js'></script>
+    </body>
+    <script src='script/nav.js' async></script>
+</html>

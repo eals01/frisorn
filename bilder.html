@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Frisør'n</title>
+        <link rel='icon' type='image/svg' href='ressurser/favicon.svg'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+        <link rel='stylesheet' href='style/style.css'>
+        <link rel='stylesheet' href='style/bunntekst.css'>
+        <link rel='stylesheet' href='style/nav.css'>
+        <link rel='stylesheet' href='style/bilder.css'>
+    </head>
+    <body>
+        <div id='nav_root' aktiv='index'>
+        <script src='script/nav_html.js' aktiv='3'></script>
+        <div id='wrap'>
+            <div id ='innhold'>
+                <div id='galleri'>
+                    <div onclick='bytt_bilde("v")' class='galleri_knapp' id='knapp_venstre'><</div>
+                    <img id='galleri_bilde'>
+                    <div onclick='bytt_bilde("h")' class='galleri_knapp' id='knapp_hoyre'>></div>
+                </div>
+                <div id='bilde_rulett'></div>
+                <div id='bilde_linje'></div>
+            </div>
+            <div id='bunntekst'>
+                <span>Copyright © 2020 by Frisør´n AS, Dybdahls veg 3-5, 7051 Trondheim</span>
+                <span>Tlf. 918 32 002</span>
+                <span><a href='#'>E-post: Frisør'n</a></span>
+                <span>Org.nr.: 997 490 681</span>
+                <span>Designet av studenter ved NTNU ❤️</span>
+            </div>
+        </div>
+    </body>
+    <script src='script/nav.js' async></script>
+    <script src='script/bilder.js' async></script>
+</html>
